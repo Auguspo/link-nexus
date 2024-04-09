@@ -1,12 +1,9 @@
-
 import { NextApiRequest, NextApiResponse } from "next";
 
 export default async function handler(
-  _req: NextApiRequest,
+  req: NextApiRequest,
   res: NextApiResponse,
 ) {
-  
-    await res.revalidate("/");
-    return res.json({ revalidated: true });
- 
+  await res.revalidate("/");
+  return res.json({ revalidated: true });
 }
