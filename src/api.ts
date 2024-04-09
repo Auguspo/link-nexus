@@ -3,6 +3,8 @@ import Papa from "papaparse";
 type Link = {
   label: string;
   url: string;
+  description: string;
+  gitURL: string;
 };
 
 const api = {
