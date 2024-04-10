@@ -8,6 +8,7 @@ export default function RootLayout({ children }: Props) {
   return (<>
     <head>
     <title>Link Nexus</title>
+    <link rel="shortcut icon" href="/icon.png" />
   </head>
     <html lang='es'>
    
